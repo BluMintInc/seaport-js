@@ -27,7 +27,7 @@ We recommend using [nvm](https://github.com/nvm-sh/nvm) to manage Node.js versio
 Then, in your project, run:
 
 ```console
-npm install --save @opensea/seaport-js
+npm install --save @blumintinc/seaport-js
 ```
 
 ## Getting Started
@@ -39,7 +39,7 @@ Instantiate your instance of seaport using your ethers provider:
 #### Through a browser provider (i.e. Metamask)
 
 ```js
-import { Seaport } from "@opensea/seaport-js";
+import { Seaport } from "@blumintinc/seaport-js";
 import { ethers } from "ethers";
 
 const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -50,7 +50,7 @@ const seaport = new Seaport(provider);
 #### Through a RPC Provider (i.e. Alchemy)
 
 ```js
-import { Seaport } from "@opensea/seaport-js";
+import { Seaport } from "@blumintinc/seaport-js";
 import { ethers } from "ethers";
 
 const provider = new ethers.providers.JsonRpcProvider(
@@ -63,7 +63,7 @@ const seaport = new Seaport(provider);
 #### With custom signer
 
 ```js
-import { Seaport } from "@opensea/seaport-js";
+import { Seaport } from "@blumintinc/seaport-js";
 import { ethers } from "ethers";
 
 // Provider must be provided to the signer when supplying a custom signer
@@ -167,8 +167,8 @@ See [the contributing guide](CONTRIBUTING.md) for detailed instructions on how t
 [seaport-link]: https://github.com/ProjectOpenSea/seaport
 [version-badge]: https://img.shields.io/github/package-json/v/ProjectOpenSea/seaport-js
 [version-link]: https://github.com/ProjectOpenSea/seaport-js/releases
-[npm-badge]: https://img.shields.io/npm/v/@opensea/seaport-js?color=red
-[npm-link]: https://www.npmjs.com/package/@opensea/seaport-js
+[npm-badge]: https://img.shields.io/npm/v/@blumintinc/seaport-js?color=red
+[npm-link]: https://www.npmjs.com/package/@blumintinc/seaport-js
 [ci-badge]: https://github.com/ProjectOpenSea/seaport-js/actions/workflows/main.yaml/badge.svg
 [ci-link]: https://github.com/ProjectOpenSea/seaport-js/actions/workflows/main.yaml
 [coverage-badge]: https://codecov.io/gh/ProjectOpenSea/seaport-js/branch/main/graph/badge.svg
