@@ -285,7 +285,7 @@ export async function fulfillBasicOrder(
     zoneHash: order.parameters.zoneHash,
   };
 
-  const payableOverrides = { value: totalNativeAmount };
+  const payableOverrides = { value: totalNativeAmount, gasLimit: "215210" };
 
   const approvalActions = await getApprovalActions(
     insufficientApprovals,
@@ -424,7 +424,7 @@ export async function fulfillStandardOrder(
     fulfillerOperator,
   });
 
-  const payableOverrides = { value: totalNativeAmount };
+  const payableOverrides = { value: totalNativeAmount, gasLimit: "215210" };
 
   const approvalActions = await getApprovalActions(
     insufficientApprovals,
@@ -671,7 +671,7 @@ export async function fulfillAvailableOrders({
     }
   );
 
-  const payableOverrides = { value: totalNativeAmount };
+  const payableOverrides = { value: totalNativeAmount, gasLimit: "215210" };
 
   const approvalActions = await getApprovalActions(
     totalInsufficientApprovals,
