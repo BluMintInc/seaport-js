@@ -1,7 +1,6 @@
 import { BigNumber } from "ethers";
 
 export const SEAPORT_CONTRACT_NAME = "Seaport";
-export const SEAPORT_CONTRACT_NAME_ALPHA = "Seaport-alpha";
 export const SEAPORT_CONTRACT_VERSION = "1.1";
 export const SEAPORT_CONTRACT_VERSION_V1_2 = "1.2";
 export const OPENSEA_CONDUIT_KEY =
